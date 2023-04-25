@@ -1,0 +1,20 @@
+{
+    "name": "DataCleaner",
+    "version": "1.0",
+    "description": "A data cleaning tool as a Chrome extension",
+    "manifest_version": 2,
+    "permissions": ["activeTab", "storage", "tabs", "storage"],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "login.html",
+        "default_title": "DataCleaner"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "scripts.js"
+    ]
+}
